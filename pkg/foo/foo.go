@@ -1,7 +1,11 @@
 package foo
 
-import "fmt"
+import (
+	"fmt"
+
+	uuid "github.com/satori/go.uuid"
+)
 
 func Foo() {
-	fmt.Println("Foo")
+	fmt.Println(uuid.NewV4().String())
 }
